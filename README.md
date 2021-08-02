@@ -1,3 +1,4 @@
+I want ot learn how to version control projects.
 # mycode
 All my code from Alta3's Python course!
 # mycode (Project Title)
