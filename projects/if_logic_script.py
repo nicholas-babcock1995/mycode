@@ -5,7 +5,7 @@
     This script will prompt a user with a quiz of multiple choice answers.
     The answers will be stored and then calculated at the end.
                                                                         """
-
+#game object
 game =  {
             "questions":  [
                             "What is your favorite season?",
@@ -14,23 +14,24 @@ game =  {
                             "Which sport do you prefer?",
                             "Which game do you prefer?"
 
-                        ],                   
+                          ],                   
             "answers":    [
                             ["Summer","Winter","Spring","Fall"],
                             ["Hot Wings","Cotton Candy","Soup","Bread"], 
                             ["Fox","leemur","Shark","Mole"],
                             ["Boxing","BMX","Surfing","Football"],
                             ["Call of Duty","Candy Crush","Goldfish","Jumanji"]
-                        ],
-            "choices":    ["A)","B)","C)","D)"],
-            "responses":  [
-                         "You are a fire bender!",
-                         "You are an air bender!",
-                         "You are a water bender!",
-                         "You are an earth bender!"
-                         ]
+                          ],
+            "choices":      ["A)","B)","C)","D)"],
+            "responses":    [
+                             "You are a fire bender!",
+                             "You are an air bender!",
+                             "You are a water bender!",
+                             "You are an earth bender!"
+                            ]
         }
 
+#
 player = {
             "fire": 0,
             "air": 0,
