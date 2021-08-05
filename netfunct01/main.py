@@ -3,6 +3,12 @@
 
 import json
 
+#function accepts list of IPs as single arg, iterates and prints
+def devicereboot(ip_list):
+    for ip in ip_list:
+        print("Connecting to {}".format(ip))
+    print("Rebooting Now!")
+
 # function to push commands
 def commandpush(devicecmd): # devicecmd==dict
 
@@ -27,7 +33,7 @@ def main():
 
     ## run
     commandpush(devicecmd) # call function to push commands to devices
-
+    devicereboot(devicecmd) #reboots device
 # call our main function
 main()
 
