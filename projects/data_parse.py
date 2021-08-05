@@ -20,6 +20,9 @@ def main():
 
     movie_sheet_by_title.to_excel("moviesByTitle.xlsx")
     movie_sheet_by_rating.to_excel("moviesByRating.xlsx")
-
+    
+    #Now that they are indexed by title i will sort the titles.
+    print( movie_sheet_by_title.sort_values('Title',ascending=True).head(5))
+    #interestingly it will classify numbers before letters when sorting.
 if __name__ == "__main__":
     main()
