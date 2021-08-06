@@ -30,4 +30,8 @@ class Cheat_Loaded_Dice(Player): # inheritance of Player
           if self.dice[i] < 6:
               self.dice[i] += 1
           i += 1
-
+class Cheat_triple_six(Player):
+    def cheat(self):
+        i=0
+        while i < len(self.dice):
+            self.dice[i] = 6
