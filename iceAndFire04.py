@@ -37,6 +37,12 @@ def main():
                 book_json = bookresp.json()
                 if 'name' in book_json:
                     print(book_json['name'])
+        if 'povBooks' in got_dj:
+            for pov_book in got_dj['povBooks']:
+                pov_book_resp = requests.get(pov_book)
+                pov_book_json = pov_book_resp.json()
+                if 'name' in pov_book_json:
+                    print(pov_book_json['name'])
 if __name__ == "__main__":
         main()
 
