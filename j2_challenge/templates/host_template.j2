@@ -1,0 +1,20 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<title>Title of the document</title>
+</head>
+
+<body>
+{% for group in groups %}
+<p> {{group.ip}} {{group.fdqn}} # {{group.hostname}}
+</p>
+{% endfor %}
+
+<br>
+<li><a href = '/form'></b>Click here to add more data</b></a></li>
+<li><a href = '/logout'></b>Click here to log out</b></a></li>
+~                                                                  
+</body>
+
+</html> 
+
